@@ -23,7 +23,7 @@ function generateSphere(count: number, radius: number) {
 }
 
 function Stars(props: any) {
-    const ref = useRef<any>();
+    const ref = useRef<any>(null);
     const [sphere] = useState(() => generateSphere(5000, 1.5));
 
     useFrame((state, delta) => {
